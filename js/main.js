@@ -7,7 +7,6 @@ class musicPlayer {
         this.infoBar = document.getElementById('info');
         this.status = false;
     }
-
     play() {
         var audio = document.getElementById('Music'); 
         let controlPanelObj = this.controlPanel,
@@ -15,22 +14,15 @@ class musicPlayer {
         Array.from(controlPanelObj.classList).find(function(element){   
             return element !== "active" ? controlPanelObj.classList.add('active') : controlPanelObj.classList.remove('active');       
         });
-
         Array.from(infoBarObj.classList).find(function(element){
             return element !== "active" ? infoBarObj.classList.add('active') : infoBarObj.classList.remove('active');
         });
-
         this.status = !this.status;
-
         if(this.status == true){
             audio.play(); 
         }else{
             audio.pause();
         }
-
-
     }
-
 }
-
 const newMusicPlayer = new musicPlayer();
