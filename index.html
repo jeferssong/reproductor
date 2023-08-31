@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" style="background-image: url('/img/background.jpeg');">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Reproductor Design</title>
+</head>
+
+<body>
+    
+    <div class="player">
+        <div id="info" class="info">
+            <span class="artist">Bensound</span>
+            <span class="name">Going Higher</span>
+            <div class="progress-bar">
+                <div class="bar"></div>
+            </div>
+        </div>   
+
+        <div id="control-panel" class="control-panel">
+            <div class="album-art">
+                <img src="img/Fondo.jpg" alt="">
+            </div>
+            <div class="controls">
+                <div class="prev"></div>
+                <div class="play" id="play"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="Music" controls style="display: none;">
+        <source  src="audio/cancion.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
